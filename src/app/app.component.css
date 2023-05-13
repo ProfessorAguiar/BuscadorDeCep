@@ -1,0 +1,15 @@
+.appComp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border: 1px solid #3c3c3c;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(87, 87, 87);
+    width: 70%;
+    margin-top: 60%;
+    box-shadow: 3px 3px 7px black;
+}
