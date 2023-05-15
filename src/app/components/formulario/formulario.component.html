@@ -1,8 +1,17 @@
 <div class="formulario">
     <form>
-        <input type="text" #cep class="entrada" placeholder="Insira seu CEP" />
+        <input type="text" #cep class="entrada" placeholder="Insira seu CEP" value={{cepNum}}/>
         <div class="bt">
         <input type="submit" class="botao" value="Buscar" (click)="buscarCEP(cep.value); $event.preventDefault()">
+        
         </div>
     </form>
+</div>
+<div class="result" *ngIf="isResult">
+<h4>CEP: {{cepNum}}</h4>
+<p>Endereço: {{rua}}</p>
+<p>Bairro: {{bairro}}</p>
+<p>Cidade: {{cidade}}</p>
+<p>Estado: {{estado}}</p>
+<input type="reset" class="botao" value="Limpar" (click)="limparCEP()">
 </div>
